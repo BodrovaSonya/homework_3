@@ -1,6 +1,8 @@
 public class Calc {
     private Sum sum;
     private Div div;
+    private Mult mult;
+    private Quotient quotient;
 
     public Calc (char op, double a, double b){
         switch (op){
@@ -11,6 +13,15 @@ public class Calc {
             case '-':
                 div = new Div(a, b);
                 System.out.println(div.getResult());
+                break;
+            case '*':
+                mult = new Mult(a, b);
+                System.out.println(mult.getResult());
+                break;
+            case '/' :
+                quotient = new Quotient(a, b);
+                System.out.println(quotient.getResult());
+                break;
             default:
                 sum = new Sum (a, b);
                 System.out.println(sum.getResult());
@@ -32,5 +43,9 @@ public class Calc {
 
     public Div getDiv() {
         return div;
+    }
+
+    public void setMult(Mult mult) {
+        this.mult = mult;
     }
 }
