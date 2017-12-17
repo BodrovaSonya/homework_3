@@ -6,7 +6,6 @@ public class Main {
         Scanner scanner = new Scanner(System.in);
         boolean flag = true;
         while (flag){
-            try {
                 System.out.print("Input first number: ");
                 double firstNumber = scanner.nextDouble();
                 System.out.print("Input second number: ");
@@ -14,9 +13,6 @@ public class Main {
                 System.out.print("Choose operation (+,-,*,/): ");
                 char op = scanner.next().charAt(0);
                 Calc calc = new Calc(op, firstNumber, secondNumber);
-            } catch (InputMismatchException a){
-                System.out.println("Incorrect number format");
-            }
 
             System.out.println("Continue? Y/N");
             char answer = scanner.next().charAt(0);
