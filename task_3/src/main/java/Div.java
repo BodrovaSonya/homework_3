@@ -1,4 +1,8 @@
-public class Div {
+/**
+ * div which implements Operation
+ */
+
+public class Div implements Operation{
     private double a;
     private double b;
     private double result;

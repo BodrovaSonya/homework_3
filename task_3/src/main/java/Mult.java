@@ -1,4 +1,8 @@
-public class Mult {
+/**
+ * mult which implements Operation
+ */
+
+public class Mult implements Operation{
     private double a;
     private double b;
     private double result;

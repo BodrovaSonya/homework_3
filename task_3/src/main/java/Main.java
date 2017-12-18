@@ -16,6 +16,7 @@ public class Main {
                 Calc calc = new Calc(op, firstNumber, secondNumber);
             } catch (InputMismatchException a){
                 System.out.println("Incorrect number format");
+                break;
             }
 
             System.out.println("Continue? Y/N");

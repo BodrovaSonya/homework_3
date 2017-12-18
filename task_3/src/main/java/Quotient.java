@@ -1,4 +1,8 @@
-public class Quotient {
+/**
+ * quotient which implements Operation
+ */
+
+public class Quotient implements Operation{
     private double a;
     private double b;
     private double result;

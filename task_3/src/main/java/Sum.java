@@ -1,7 +1,11 @@
-public class Sum {
+/**
+ * sum which implements Operation
+ */
+public class Sum implements Operation{
     private double a;
     private double b;
     private double result;
+
      public Sum (double a_, double b_){
         setA(a_);
         setB(b_);
